@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX feladat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="ajax.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Webprogramozás-1 Előadás Házi feladat</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li><a href="tabla.html">Táblázat</a></li>
+      <li><a href="html5.html">HTML5 API</a></li>
+      <li><a href="chart.html">ChartJS</a></li>
+      <li class="active"><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+      <li><a href="react/index.html">React</a></li>
+    </ul>
+  </nav>
+
+  <aside>
+    <p>Itt lehet majd hasznos infókat elhelyezni.</p>
+  </aside>
+
+  <div id="content">
+    <div id="code"></div>
+    <div id="readDiv"></div>
+
+    <div id="createDiv">
+      <h2>Create</h2>
+      Name (required, max 30): <input id="name1" type="text"><br>
+      Height (required, max 30): <input id="height1" type="text"><br>
+      Weight (required, max 30): <input id="weight1" type="text"><br>
+      <button type="submit" onclick="create();">Create</button><br>
+      <div id="createResult"></div>
+    </div>
+
+    <div id="updateDiv">
+      <h2>Update</h2>
+      ID (required): <input id="idUpd" type="text"><br>
+      <button type="submit" onclick="getDataForId();">getDataForId</button><br>
+      Name (required, max 30): <input id="name2" type="text"><br>
+      Height (required, max 30): <input id="height2" type="text"><br>
+      Weight (required, max 30): <input id="weight2" type="text"><br>
+      <button type="submit" onclick="update();">Update</button><br>
+      <div id="updateResult"></div>
+    </div>
+
+    <div id="deleteDiv">
+      <h2>Delete</h2>
+      ID (required): <input id="idDel" type="text"><br>
+      <button type="submit" onclick="deleteF();">Delete</button><br>
+      <div id="deleteResult"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Készítette: Kovács Ádám(XJ07RM)</p>
+  </footer>
+</body>
+</html>
