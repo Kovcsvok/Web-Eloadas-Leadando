@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 API példák</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="html5.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Webprogramozás-1 Előadás Házi feladat</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="tabla.html">Táblázat</a></li>
+            <li class="active"><a href="html5.html">HTML5 API</a></li>
+            <li><a href="chart.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+            <li><a href="react/index.html">React</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <div id="content">
+        <h2>HTML5 API példák</h2>
+
+        <section>
+            <h3>1. Web Storage</h3>
+            <input type="text" id="storageInput" placeholder="Írj be valamit...">
+            <button onclick="saveToStorage()">Mentés</button>
+            <button onclick="loadFromStorage()">Betöltés</button>
+            <p id="storageOutput"></p>
+        </section>
+
+        <section>
+            <h3>2. Geolocation</h3>
+            <button onclick="getLocation()">Helyzet lekérése</button>
+            <p id="locationOutput"></p>
+        </section>
+
+        <section>
+            <h3>3. Drag & Drop</h3>
+            <div id="dragZone" draggable="true">Húzz engem!</div>
+            <div id="dropZone">Dobd ide!</div>
+        </section>
+
+        <section>
+            <h3>4. Canvas</h3>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+        </section>
+
+        <section>
+            <h3>5. SVG</h3>
+            <svg width="200" height="100">
+                <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="lightblue" />
+            </svg>
+        </section>
+    </div>
+
+    <footer>
+        <p>Készítette:Kovács Ádám (XJ07RM)</p>
+    </footer>
+</body>
+</html>
