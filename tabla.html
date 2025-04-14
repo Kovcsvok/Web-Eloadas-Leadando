@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Táblázat CRUD + Rendezés</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="tabla.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Webprogramozás-1 Előadás Házi feladat</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Főoldal</a></li>
+      <li class="active"><a href="tabla.html">Táblázat</a></li>
+      <li><a href="html5.html">HTML5 API</a></li>
+      <li><a href="chart.html">ChartJS</a></li>
+      <li><a href="ajax.html">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+      <li><a href="react/index.html">React</a></li>
+    </ul>
+  </nav>
+
+  
+
+  <div id="content">
+    <h2>CRUD + Rendezhető Táblázat</h2>
+
+    <form id="dataForm">
+      <input type="text" id="name" placeholder="Név" required>
+      <input type="number" id="age" placeholder="Kor" required>
+      <input type="text" id="city" placeholder="Város" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit">Hozzáadás / Módosítás</button>
+    </form>
+
+    <input type="text" id="searchInput" placeholder="Keresés..." />
+
+    <table id="dataTable" border="1">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Név</th>
+          <th onclick="sortTable(1)">Kor</th>
+          <th onclick="sortTable(2)">Város</th>
+          <th onclick="sortTable(3)">Email</th>
+          <th>Műveletek</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sorok dinamikusan -->
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>Készítette: Kovács Ádám (XJ07RM)</p>
+  </footer>
+</body>
+</html>
