@@ -1,0 +1,99 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #007d5c);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 16px 32px; 
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar button {
+  background: white;
+  color: #007d5c;
+  border: none;
+  padding: 10px 20px; 
+  border-radius: 6px;
+  font-size: 16px; 
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h1 {
+  margin-bottom: 32px; 
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.card .front {
+  background-color: #fff;
+  color: black;
+  transform: rotateY(180deg);
+  border: 2px solid #ccc;
+}
+
+.card .back {
+  background-color: #004c3f;
+  color: white;
+  transform: rotateY(0deg);
+  border: 2px solid #004c3f;
+}
+
+.card.flipped .front {
+  transform: rotateY(0deg);
+}
+
+.card.flipped .back {
+  transform: rotateY(180deg);
+}
