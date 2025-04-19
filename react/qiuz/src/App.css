@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  min-height: 800px;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@ body {
   max-width: 90%;
   text-align: center;
   padding-top: 80px;
- 
+  flex: 1;
 }
 
 .question-card {
