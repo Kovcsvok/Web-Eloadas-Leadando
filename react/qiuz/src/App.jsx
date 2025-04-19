@@ -4,7 +4,7 @@ import './App.css'
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="../../index.html">🏠 Kezdőlap</a>
+      <a href="../../react.html">🏠 Kezdőlap</a>
       <a href="../memory/index.html">🎯 Memória</a>
     </nav>
   );

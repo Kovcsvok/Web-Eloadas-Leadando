@@ -12,7 +12,7 @@ function Card({ card, onClick }) {
 function Navbar() {
   return (
     <nav className="navbar">
-      <a href="../../index.html">🏠 Kezdőlap</a>
+      <a href="../../react.html">🏠 Kezdőlap</a>
       <a href="../quiz/index.html">🧠 Kvíz</a>
     </nav>
   );
