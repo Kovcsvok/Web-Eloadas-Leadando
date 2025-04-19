@@ -22,7 +22,7 @@ function Navbar() {
 
 
 function App() {
-  const emojis = ['🍕', '🍔', '🍟', '🌭', '🥐', '🍩', '🍉', '🍇'];
+  const emojis = ['🍕', '❤️', '😎', '👺', '✌️', '🍩', '💀', '👻'];
 
   const createCards = () => {
     const shuffled = [...emojis, ...emojis].sort(() => 0.5 - Math.random());
