@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="../../index.html">🏠 Kezdőlap</a>
-      <a href="../app1/index.html">🎯 Memória</a>
+      <a href="../memory/index.html">🎯 Memória</a>
     </nav>
   );
 }

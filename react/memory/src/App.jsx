@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="../../index.html">🏠 Kezdőlap</a>
-      <a href="../app2/index.html">🧠 Kvíz</a>
+      <a href="../quiz/index.html">🧠 Kvíz</a>
     </nav>
   );
 }
