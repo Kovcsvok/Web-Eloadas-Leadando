@@ -64,31 +64,32 @@ function App() {
 
   return (
     <>
-    <Navbar />
-    <div className="quiz-container">
-      <h1>🧠 Kvíz játék</h1>
-      {showResult ? (
-        <div className="result">
-          <h2>🎉 Végeredmény</h2>
-          <p>Helyes válaszok száma: {score} / {questions.length}</p>
-        </div>
-      ) : (
-        <div className="question-card">
-          <h2>{questions[current].question}</h2>
-          <div className="options">
-            {questions[current].options.map((opt, idx) => (
-              <button key={idx} onClick={() => handleAnswer(opt)}>
-                {opt}
-              </button>
-            ))}
+      <Navbar />
+      <div className="quiz-container">
+        <h1>🧠 Kvíz játék</h1>
+        {showResult ? (
+          <div className="result">
+            <h2>🎉 Végeredmény</h2>
+            <p>Helyes válaszok száma: {score} / {questions.length}</p>
           </div>
-        </div>
-      )}
-    </div>
+        ) : (
+          <div className="question-card">
+            <h2>{questions[current].question}</h2>
+            <div className="options">
+              {questions[current].options.map((opt, idx) => (
+                <button key={idx} onClick={() => handleAnswer(opt)}>
+                  {opt}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+  
+      <footer className="footer">
+        <p>Készítette: Kovács Ádám(XJ07RM) </p>
+      </footer>
     </>
-  );
+  )
 }
-
 export default App;
-
-

@@ -94,6 +94,9 @@ function App() {
             <Card key={card.id} card={card} onClick={() => handleClick(card)} />))}
         </div>
       </div>
+      <footer className="footer">
+  <p>Készítette: Kovács Ádám(XJ07RM) </p>
+  </footer>
     </>
   );
 }
