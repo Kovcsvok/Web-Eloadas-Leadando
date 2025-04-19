@@ -1,0 +1,35 @@
+
+body {
+  background: linear-gradient(135deg, #00c6ff, #007d5c);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.buttons a {
+  text-decoration: none;
+  background: white;
+  color: #007d5c;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: #00c6ff;
+  color: white;
+}

@@ -12,9 +12,9 @@ function Card({ card, onClick }) {
 function Navbar() {
   return (
     <nav className="navbar">
-      <button>🏠 Kezdőlap</button>
-      <button>🎯 Memória</button>
-      <button>🧠 Kvíz</button>
+      <a href="../../index.html">🏠 Kezdőlap</a>
+      <a href="../app1/index.html">🎯 Memória</a>
+      <a href="../app2/index.html">🧠 Kvíz</a>
     </nav>
   );
 }
