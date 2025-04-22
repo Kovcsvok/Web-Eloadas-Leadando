@@ -43,22 +43,38 @@
         </section>
 
         <section>
-            <h3>3. Drag & Drop</h3>
+            <h2>3. Web Worker példa</h2>
+            <p>Számolj össze 1-től N-ig Web Worker segítségével:</p>
+            <input type="number" id="workerInput" placeholder="pl. 1000000">
+            <button onclick="startWorker()">Számolás</button>
+            <p id="workerResult"></p>
+          </section>
+
+        <section>
+            <h3>4. Drag & Drop</h3>
             <div id="dragZone" draggable="true">Húzz engem!</div>
             <div id="dropZone">Dobd ide!</div>
         </section>
 
         <section>
-            <h3>4. Canvas</h3>
+            <h3>5. Canvas</h3>
             <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
         </section>
 
         <section>
-            <h3>5. SVG</h3>
+            <h3>6. SVG</h3>
             <svg width="200" height="100">
                 <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="lightblue" />
             </svg>
         </section>
+
+        <section>
+            <h2>7. Server-Sent Events</h2>
+            <button onclick="startSSE()">Indítás</button>
+            <ul id="sseLog"></ul>
+          </section>
+          
+
     </div>
 
     <footer>

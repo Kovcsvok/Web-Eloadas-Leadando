@@ -9,6 +9,33 @@ function loadFromStorage() {
     document.getElementById('storageOutput').textContent = value ? `Mentett érték: ${value}` : "Nincs mentett érték.";
 }
 
+function startWorker() {
+    const num = parseInt(document.getElementById("workerInput").value);
+    if (!num || num < 1) return alert("Adj meg egy pozitív számot!");
+  
+    const worker = new Worker("worker.js");
+    worker.postMessage(num);
+    worker.onmessage = (e) => {
+      document.getElementById("workerResult").textContent = `Eredmény: ${e.data}`;
+      worker.terminate();
+    };
+  }
+  
+  function startSSE() {
+    const log = document.getElementById("sseLog");
+    log.innerHTML = "";
+    let counter = 0;
+  
+    const interval = setInterval(() => {
+      counter++;
+      const li = document.createElement("li");
+      li.textContent = `Üzenet érkezett: ${new Date().toLocaleTimeString()}`;
+      log.appendChild(li);
+  
+      if (counter >= 5) clearInterval(interval);
+    }, 2000);
+  }
+  
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -25,7 +52,7 @@ function getLocation() {
     }
 }
 
-// Drag and Drop
+
 const dragZone = document.getElementById('dragZone');
 const dropZone = document.getElementById('dropZone');
 
@@ -48,7 +75,7 @@ dropZone.addEventListener('drop', e => {
     dropZone.style.backgroundColor = "";
 });
 
-// Canvas rajz
+
 window.addEventListener('load', () => {
     const canvas = document.getElementById('myCanvas');
     const ctx = canvas.getContext('2d');
