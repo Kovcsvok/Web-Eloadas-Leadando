@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="../../react.html">🏠 Kezdőlap</a>
-      <a href="../quiz/index.html">🧠 Kvíz</a>
+      <a href="../react/quiz/index.html">🧠 Kvíz</a>
     </nav>
   );
 }

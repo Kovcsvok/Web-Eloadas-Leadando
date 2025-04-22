@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="../../react.html">🏠 Kezdőlap</a>
-      <a href="../memory/index.html">🎯 Memória</a>
+      <a href="../react/memory/index.html">🎯 Memória</a>
     </nav>
   );
 }
